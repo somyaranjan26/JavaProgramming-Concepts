@@ -10,14 +10,15 @@ public class Main {
         System.out.print("Enter Your year of birth: ");
 
         boolean isInt = input.hasNextInt();    // check weather input is integer or not.
+        
         if (isInt) {
             int birthYear = input.nextInt();    // nextInt() store integer input in a variable
             input.nextLine();   // handle next line character (enter key)
 
             System.out.print("Enter Your Name: ");
-            String name = input.nextLine();
+            String name = input.nextLine();    // nextLine() store String input in a variable.
 
-            int age = 2019 - birthYear;
+            int age = 2019 - birthYear;    // calculating age of user.
 
             if (age >= 0 && age <= 100){
                 System.out.println("Welcome " + name + ", And you are " + age + " years old.");
