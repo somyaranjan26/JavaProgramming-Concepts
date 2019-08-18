@@ -9,7 +9,7 @@ public class Main {
 
         System.out.print("Enter Your year of birth: ");
 
-        boolean isInt = input.hasNextInt();
+        boolean isInt = input.hasNextInt();    // check weather input is integer or not.
         if (isInt) {
             int birthYear = input.nextInt();    // nextInt() store integer input in a variable
             input.nextLine();   // handle next line character (enter key)
